@@ -6,7 +6,7 @@ function onFormSubmit(event) {
 
   const elements = event.target.elements;
 
-  if (elements[0].value != 0 && elements[1].value != 0) {
+  if (elements.email.value != 0 && elements.password.value != 0) {
     data = new FormData(event.target);
     data.forEach((x, y) => {
       console.log(`${y}:${x}`);
