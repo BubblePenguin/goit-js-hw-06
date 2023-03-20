@@ -1,5 +1,5 @@
 document
   .querySelector("input#name-input")
-  .addEventListener("change", (event) => {
+  .addEventListener("input", (event) => {
     document.querySelector("span#name-output").textContent = event.target.value;
   });
